@@ -9,7 +9,10 @@
 #define Piston6 7
 
 class Pistons {
+public:
     Pistons();
-    void openPiston(int index);
-    void closePiston(int index);
+    void openPiston(uint8_t index);
+    void closePiston(uint8_t index);
+private:
+    uint8_t mapPistons(uint8_t index);
 };

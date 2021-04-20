@@ -2,7 +2,7 @@
 #include <Arduino.h>
 
 // Not sure
-#define RelayPin 14
+#define RELAYPIN 9
 
 class WaterPump {
 public:

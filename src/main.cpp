@@ -1,9 +1,13 @@
-#include <Arduino.h>
+#include "ctt.hpp"
 
 void setup() {
-  // put your setup code here, to run once:
+  Serial.begin(115200);
+
+  // Init things ..
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
+  waterHeater.run();
+  communication.run();
+  run();
 }
