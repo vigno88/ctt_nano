@@ -8,12 +8,12 @@ Pistons::Pistons() {
     pinMode(Piston5, OUTPUT);
     pinMode(Piston6, OUTPUT);
     // Open all pistons on boot up
-    digitalWrite(Piston1, LOW);
-    digitalWrite(Piston2, LOW);
-    digitalWrite(Piston3, LOW);
-    digitalWrite(Piston4, LOW);
-    digitalWrite(Piston5, LOW);
-    digitalWrite(Piston6, LOW);
+    openPiston(1);
+    openPiston(2);
+    openPiston(3);
+    openPiston(4);
+    openPiston(5);
+    openPiston(6);
 }
 
 void Pistons::closePiston(uint8_t i) {

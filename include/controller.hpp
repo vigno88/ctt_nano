@@ -5,7 +5,7 @@
 class Controller {
 public:
     const double kp = 2;
-    const double ki = 5;
+    const double ki = 0.5;
     const double kd = 1;
 
     Controller(uint8_t target, uint64_t samplingDelay);

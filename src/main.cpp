@@ -2,8 +2,8 @@
 
 void setup() {
   Serial.begin(115200);
-
-  // Init things ..
+  temperatureSensor = TemperatureSensor();
+  
 }
 
 void loop() {

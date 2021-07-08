@@ -2,7 +2,7 @@
 #include <Arduino.h>
 
 // Define the pin of the SSR
-#define SSRHeat 18
+#define SSRHeat 9
 
 class WaterHeater {
 public:
@@ -11,7 +11,7 @@ public:
     void setIntensity(uint8_t i);
     void run();
 private:
-    uint8_t _isInDuty;
+    uint8_t _isLow;
     uint32_t _dutyCycle;
     uint32_t _cycleTime;
     uint32_t _stepTime;

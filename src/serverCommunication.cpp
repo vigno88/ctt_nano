@@ -17,7 +17,7 @@ void ServerCommunication::run() {
 }
 
 void ServerCommunication::parsePacket(char* arg) {
-       // Split the packet
+  // Split the packet
   char* token = strtok(arg, "#");
   void (ServerCommunication::*func_ptr)(char*);
 
@@ -39,7 +39,7 @@ void ServerCommunication::parseParameter(char* arg) {
     char* token = strtok(NULL, "#");
     if(token == NULL) {
         return;
-    } else if(strcmp(token, "1") == 0) {
+    } else if(strcmp(token, "t") == 0) {
         token = strtok(NULL, "#");
         if(token == NULL) {
             return;
@@ -68,7 +68,7 @@ void ServerCommunication::parsePiston(char* arg) {
         return;
     }
     if(strcmp(payload, "close") == 0) {
-        _pistons->openPiston(atoi(token));
+        _pistons->closePiston(atoi(token));
         return;
     }
 }

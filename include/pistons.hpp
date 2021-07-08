@@ -1,12 +1,12 @@
 #pragma once
 #include <Arduino.h>
 
-#define Piston1 2
-#define Piston2 3
-#define Piston3 4
-#define Piston4 5
-#define Piston5 6
-#define Piston6 7
+#define Piston1 7
+#define Piston2 6
+#define Piston3 5
+#define Piston4 4
+#define Piston5 3
+#define Piston6 2
 
 class Pistons {
 public:
