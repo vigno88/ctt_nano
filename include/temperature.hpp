@@ -9,11 +9,12 @@
 // 100.0 for PT100, 1000.0 for PT1000
 #define RNOMINAL  100.0
 
-static Adafruit_MAX31865 thermometer = Adafruit_MAX31865(10);
+static Adafruit_MAX31865 thermometer = Adafruit_MAX31865(10,11,12,13);
 
 // Temperature sensor based on the MAX31865
 class TemperatureSensor {
 public:
     TemperatureSensor();
     float readTemp();
+    void readError();
 };
